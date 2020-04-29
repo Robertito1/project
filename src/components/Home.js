@@ -4,7 +4,7 @@ import Teacher from "./teacher/Teacher";
 import Student from "./student/Student";
 
 let option = null;
-let required = "student";
+let required = "tea";
 
 if (required === "teacher") {
   option = <Teacher />;

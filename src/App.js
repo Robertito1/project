@@ -12,7 +12,15 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div
+        className="App"
+        style={{
+          backgroundColor: "red",
+          textDecoration: "none",
+          height: "500rem",
+          borderRadius: "4px",
+        }}
+      >
         <Link to="/">home</Link>| <Link to="/about">ahome</Link>
         "hello world"
         <Route
