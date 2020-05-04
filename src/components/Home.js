@@ -1,27 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import Login from "./Login";
-import Teacher from "./teacher/Teacher";
-import Student from "./student/Student";
+// import Teacher from "./teacher/Teacher";
+// import Student from "./student/Student";
+import Header from "./Header";
 
-let option = null;
-let required = "tea";
+function Home() {
+  // const [login, setLogin] = useState([
+  //   {
+  //     loggedIn: true,
+  //   },
+  // ]);
 
-if (required === "teacher") {
-  option = <Teacher />;
-} else if (required === "student") {
-  option = <Student />;
-} else option = <Login />;
-
-class Home extends Component {
-  state = {};
-  render() {
-    return (
-      <div>
-        <p>this is home</p>
-        {option}
-      </div>
-    );
-  }
+  return (
+    <div className="home">
+      <Header />
+      <Login />
+    </div>
+  );
 }
 
 export default Home;

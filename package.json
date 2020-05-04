@@ -13,6 +13,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-google-login": "^5.1.10",
+    "react-player": "^2.0.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
@@ -20,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json:server": "json-server --watch db.json"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,26 +1,55 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
+import UpdatePic from "./UpdatePic";
 import Favorites from "./Favorites";
-import Logout from "./Logout";
-import Password from "./Password";
+import ResponsivePlayer from "../player";
 
 class Student extends Component {
   state = {};
   render() {
     return (
-      <header>
+      <div>
         <Router>
-          <div>
-            <Link to="/student/favorites">favorites</Link>|
-            <Link to="/student/logout">logout</Link>
-            <Link to="/student/passwordUpdate">password</Link>
+          <div style={{ marginTop: "30px" }}>
+            <Link
+              to="/student/favorites"
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "yellow",
+              }}
+            >
+              favorites
+            </Link>
+            |{"  "}
+            <Link
+              to="/student/Updatepic "
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "yellow",
+              }}
+            >
+              Update Profile Picture
+            </Link>
+            <Link
+              to="/student/Updatepic "
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "yellow",
+              }}
+            >
+              Update Profile Picture
+            </Link>
             <Route path="/student/favorites" component={Favorites} />
-            <Route path="/student/logout" component={Logout} />
-            <Route path="/student/passwordUpdate" component={Password} />
+            <Route path="/student/Updatepic" component={UpdatePic} />
+            <Route path="/student/Updatepic" component={UpdatePic} />
           </div>
         </Router>
-      </header>
+        <ResponsivePlayer />
+      </div>
     );
   }
 }

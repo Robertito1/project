@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  background-color: #a3a4a7;
+  height: 100rem;
+  display: flexbox;
+}
+.favourites {
+  font: 1em sans-serif;
+  margin-top: 20px;
+  color: rgb(14, 13, 13);
+}
+.about {
+  font: 1em sans-serif;
+  margin-top: auto;
 }
 
 .App-logo {

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Favorites extends Component {
   state = {};
   render() {
-    return <p>favorite videos appear here</p>;
+    return <div className="favourites">favorite videos appear here</div>;
   }
 }
 
